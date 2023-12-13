@@ -15,7 +15,6 @@ body,html {
     display: flex;
     align-items: center;
     justify-content: center;
-    /*flex-direction: column; */
 }
 
 .main-nav-bar {
@@ -110,40 +109,39 @@ h3 {
 
 
 .footer-main {
-    background-color: #333; /* Bakgrundsfärg för hela footern, ändra efter behov */
-    color: white; /* Textfärg för hela footern, ändra efter behov */
-    padding: 20px 0; /* Mellanrum inuti footern, ändra efter behov */
+    background-color: #333; 
+    color: white; 
+    padding: 20px 0; 
   }
   
   .footer-container {
     display: flex;
-    justify-content: space-around; /* Justera efter behov, t.ex. space-between för att få utrymme i ändarna */
-    flex-wrap: wrap; /* Gör det möjligt för element att hamna på flera rader om det inte finns tillräckligt med utrymme */
+    justify-content: space-around; 
+    flex-wrap: wrap;
   }
   
   .footer-item {
-    max-width: 300px; /* Maximal bredd för varje footer-item, ändra efter behov */
-    text-align: left; /* Justera efter behov, t.ex. center för att centrera texten */
+    max-width: 300px; 
+    text-align: left; 
   }
   
   .footer-item h4 {
-    font-size: 18px; /* Ändra efter behov */
-    margin-bottom: 10px; /* Mellanrum under varje rubrik, ändra efter behov */
+    font-size: 18px; 
+    margin-bottom: 10px; 
   }
   
   .footer-item p {
-    margin-bottom: 8px; /* Mellanrum under varje stycke, ändra efter behov */
+    margin-bottom: 8px; 
   }
   
   .footer-item a {
-    color: white; /* Färg för länkar, ändra efter behov */
-    text-decoration: none; /* Ingen understrykning på länkar, ändra efter behov */
+    color: white; 
+    text-decoration: none; 
   }
   
   .footer-item a:hover {
-    text-decoration: underline; /* Understrykning när man hovrar över länkar, ändra efter behov */
+    text-decoration: underline; 
   }
-
 
 
 .text-align-center {
@@ -169,9 +167,7 @@ h3 {
     
 }
 
-.special-heading-middle {
-    font-size: 15px;
-}
+
 
 .special-middle-p {
 padding-top: 50px;
@@ -361,13 +357,11 @@ padding-top: 50px;
       flex-direction: column;
     }
 
-
     .service-column {
       width: 100%;
-      margin-bottom: 20px; /* Lägg till lite marginal mellan kolumner */
+      margin-bottom: 20px;
     }
   
-    /* Justera antalet kolumner för .middle-column */
     .middle-columns, .bottom-columns {
       display: flex;
       flex-wrap: wrap;
@@ -379,7 +373,6 @@ padding-top: 50px;
 
     .middle-column, .bottom-column {
       flex: 1 1 calc(50% - 10px);
-       /* Två kolumner per rad med lite marginal */
     }
 
     p {

@@ -42,12 +42,12 @@ body,html {
 }
 
 .nav-item a {
-    color: white; /* Färg för länkar, ändra efter behov */
-    text-decoration: none; /* Ingen understrykning på länkar, ändra efter behov */
+    color: white;
+    text-decoration: none; 
   }
 
 .nav-item a:hover {
-    text-decoration: underline; /* Understrykning när man hovrar över länkar, ändra efter behov */
+    text-decoration: underline;
   }
 
 .nav-left {
@@ -259,7 +259,7 @@ padding-top: 50px;
     margin: 20px;
   }
 
-  /* Top Column */
+
   .top-column {
     background-color: #f0f0f0;
     padding: 20px;
@@ -275,7 +275,7 @@ padding-top: 50px;
     margin-top: 15px;
   }
 
-  /* Middle Columns */
+ 
   .middle-columns {
     display: flex;
     justify-content: space-between;
@@ -293,7 +293,7 @@ padding-top: 50px;
     text-align: center;
   }
 
-  /* Bottom Columns */
+  
   .bottom-columns {
     display: flex;
     justify-content: space-between;
@@ -310,7 +310,7 @@ padding-top: 50px;
     text-align: center;
   }
 
-  /* Shared styles for h3, p, and button */
+  
   .mi-flex-h3,
   .mi-flex-p,
   .mi-flex-btn {
@@ -368,10 +368,10 @@ padding-top: 50px;
 
     .service-column {
       width: 100%;
-      margin-bottom: 20px; /* Lägg till lite marginal mellan kolumner */
+      margin-bottom: 20px;
     }
   
-    /* Justera antalet kolumner för .middle-column */
+    
     .middle-columns, .bottom-columns {
       display: flex;
       flex-wrap: wrap;
@@ -383,7 +383,7 @@ padding-top: 50px;
 
     .middle-column, .bottom-column {
       flex: 1 1 calc(50% - 10px);
-       /* Två kolumner per rad med lite marginal */
+  
     }
 
     p {

@@ -31,7 +31,6 @@ body,html {
     top: 0;
 }
 
-
 .nav-item {
     color: white;
     padding: 10px;
@@ -42,12 +41,12 @@ body,html {
 }
 
 .nav-item a {
-    color: white; /* Färg för länkar, ändra efter behov */
-    text-decoration: none; /* Ingen understrykning på länkar, ändra efter behov */
+    color: white;
+    text-decoration: none; 
   }
 
 .nav-item a:hover {
-    text-decoration: underline; /* Understrykning när man hovrar över länkar, ändra efter behov */
+    text-decoration: underline;
   }
 
 .nav-left {
@@ -58,65 +57,9 @@ body,html {
     padding-left: 30px;
 }
 
-
 .nav-size {
     font-size: 16px;
     color: antiquewhite;
-}
-
-.body-middle-header {
-
-    padding-top: 120px;
-}
-
-
-.body-middle-top {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 50px;
-    text-align: center;
-}
-
-.body-middle-left {
- width: 1200px;   
-}
-
-.body-middle-right {
-    width: 1200px;
-}
-
-
-
-
-
-.lower-middle {
-    height: 100%;
-    display: grid;
-    row-gap: 50px;
-    grid-template-columns: repeat(4, 1fr);
-    grid-auto-rows: minmax(140px, auto);
-    background-color: white;
-    justify-items: center;
-    padding-top: 50px;
-}
-
-.lm-grid-0 {
-    grid-column-start: 1;
-    grid-column-end: 5;
-    grid-row-start: 1;
-    grid-row-end: 1;
-    text-align: center;
-}
-
-.lm-grid-color-light {
-    background-color: #185689;
-    color: white;
-}
-
-.lm-grid-color-dark {
-    background-color: #003554;
-    color: white;
 }
 
 .font {
@@ -125,13 +68,6 @@ body,html {
 
 h3 {
     font-size: 20px;
-}
-
-.lm-grid-order {
-    text-align: center;
-    height: 300px;
-    width: 200px;
-    padding: 50px;
 }
 
 .footer-main {
@@ -173,53 +109,6 @@ h3 {
     text-align:justify;
 }
 
-.lm-grid-btn {
-    padding-top: 60px;
-}
-.btn-grid-main-grid {
-    border: none;
-    color: black;
-    padding: 14px 28px;
-    cursor: pointer; 
-    border-radius: 30px;
-}
-
-.btn-grid-main-a {
-    border: none;
-    color: white;
-    padding: 14px 28px;
-    cursor: pointer; 
-    border-radius: 30px;
-    background-color: #00a3c3;
-}
-
-.btn-grid-main-b {
-    border: none;
-    color: white;
-    padding: 14px 28px;
-    cursor: pointer; 
-    border-radius: 30px;
-    background-color: #003554;
-    
-}
-
-.special-heading-middle {
-    font-size: 15px;
-}
-
-.special-middle-p {
-padding-top: 50px;
-}
-
-.special-p-middle {
-    font-size: 30px;
-}
-
-.special-p-1-middle {
-    font-size: 14px;
-    margin: 40px;
-}
-
 .header-main {
     font-size: 45px;
     display: flex;
@@ -240,26 +129,6 @@ padding-top: 50px;
 
 .header-p {
     font-size: 18px;
-}
-
-.link-main {
-    padding-bottom: 40px;
-}
-
-.middle-inner {
-    width: 50px;
-    border-color: black;
-    text-align: center;
-}
-
-.middle-inner-border {
-    border-top-width: 2px;
-}
-
-.middle-inner-style {
-    display: inline-block;
-    position: relative;
-    vertical-align: middle;
 }
 
 .master-container {
