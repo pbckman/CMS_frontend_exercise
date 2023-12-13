@@ -38,7 +38,17 @@ body,html {
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
+
+.nav-item a {
+    color: white; /* Färg för länkar, ändra efter behov */
+    text-decoration: none; /* Ingen understrykning på länkar, ändra efter behov */
+  }
+
+.nav-item a:hover {
+    text-decoration: underline; /* Understrykning när man hovrar över länkar, ändra efter behov */
+  }
 
 .nav-left {
     padding-right: 30px;
@@ -99,30 +109,42 @@ h3 {
 }
 
 
+.footer-main {
+    background-color: #333; /* Bakgrundsfärg för hela footern, ändra efter behov */
+    color: white; /* Textfärg för hela footern, ändra efter behov */
+    padding: 20px 0; /* Mellanrum inuti footern, ändra efter behov */
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-around; /* Justera efter behov, t.ex. space-between för att få utrymme i ändarna */
+    flex-wrap: wrap; /* Gör det möjligt för element att hamna på flera rader om det inte finns tillräckligt med utrymme */
+  }
+  
+  .footer-item {
+    max-width: 300px; /* Maximal bredd för varje footer-item, ändra efter behov */
+    text-align: left; /* Justera efter behov, t.ex. center för att centrera texten */
+  }
+  
+  .footer-item h4 {
+    font-size: 18px; /* Ändra efter behov */
+    margin-bottom: 10px; /* Mellanrum under varje rubrik, ändra efter behov */
+  }
+  
+  .footer-item p {
+    margin-bottom: 8px; /* Mellanrum under varje stycke, ändra efter behov */
+  }
+  
+  .footer-item a {
+    color: white; /* Färg för länkar, ändra efter behov */
+    text-decoration: none; /* Ingen understrykning på länkar, ändra efter behov */
+  }
+  
+  .footer-item a:hover {
+    text-decoration: underline; /* Understrykning när man hovrar över länkar, ändra efter behov */
+  }
 
-.footer {
-    padding: 70px 0px 30px;
-    justify-items: center;
-    background-color: rgba(255, 255, 255, 0.7);
-}
 
-.footer-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-    grid-auto-rows: minmax(80px, auto);
-    background-color: white;
-    padding: 0px 105px;
-    margin-top: 70px;
-}
-
-.footer-welcome {
-    grid-column-start: 1;
-    grid-column-end: 1;
-    grid-row-start: 1;
-    grid-row-end: 1;
-    padding-right: 50px;
-}
 
 .text-align-center {
     text-align:justify;
@@ -202,6 +224,7 @@ padding-top: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 100px;
   }
 
   .master-container {
@@ -210,7 +233,6 @@ padding-top: 50px;
     margin: 20px;
   }
 
-  /* Top Column */
   .top-column {
     background-color: white;
     padding: 20px;
@@ -218,7 +240,6 @@ padding-top: 50px;
     text-align: center;
   }
 
-  /* Middle Columns */
   .middle-columns {
     display: flex;
     justify-content: space-between;
@@ -237,7 +258,6 @@ padding-top: 50px;
     text-align: center;
   }
 
-  /* Bottom Columns */
   .bottom-columns {
     display: flex;
     justify-content: space-between;
@@ -254,7 +274,6 @@ padding-top: 50px;
     text-align: center;
   }
 
-  /* Shared styles for h3, p, and button */
   .mi-flex-h3,
   .mi-flex-p,
   .mi-flex-btn {
@@ -269,7 +288,6 @@ padding-top: 50px;
     border: none;
     padding: 10px 20px;
     border-radius: 20px;
-
     color: black;
   }
 

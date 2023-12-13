@@ -11,45 +11,56 @@ body,html {
     background-size: cover;
 } 
 
+.master-main-navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
 .main-nav-bar {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgba(0, 0, 0, 0.3);
-    padding: 30px 10px;
+    color: white;
+    background: rgba(255, 255, 255, 0.3);
+    padding: 20px 10px;
     transition: 0.4s;
     position: fixed;
     width: 100%;
     top: 0;
 }
 
-.svg-logo {
-    display: flex;
-    align-items: center;
-}
 
 .nav-item {
     color: white;
     padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
 }
 
+.nav-item a {
+    color: white; /* Färg för länkar, ändra efter behov */
+    text-decoration: none; /* Ingen understrykning på länkar, ändra efter behov */
+  }
+
+.nav-item a:hover {
+    text-decoration: underline; /* Understrykning när man hovrar över länkar, ändra efter behov */
+  }
+
 .nav-left {
-    padding-right: 50px;
-    display: flex;
+    padding-right: 30px;
 }
 
 .nav-right {
-    padding-left: 50px;
-    display: flex;
+    padding-left: 30px;
 }
 
-.nav-left .nav-item,
-.nav-right .nav-item {
-    margin: 10px;
-}
 
 .nav-size {
-    font-size: 15px;
+    font-size: 16px;
     color: antiquewhite;
 }
 
@@ -123,28 +134,39 @@ h3 {
     padding: 50px;
 }
 
-.footer {
-    padding: 70px 0px 30px;
-    justify-items: center;
-    background-color: rgba(255, 255, 255, 0.7);
-}
-
-.footer-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-    grid-auto-rows: minmax(80px, auto);
-    background-color: white;
-    padding: 0px 105px;
-    margin-top: 70px;
-}
-
-.footer-welcome {
-    grid-column-start: 1;
-    grid-column-end: 1;
-    grid-row-start: 1;
-    grid-row-end: 1;
-    padding-right: 50px;
+.footer-main {
+    background-color: #333; 
+    color: white; 
+    padding: 20px 0; 
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-around; 
+    flex-wrap: wrap; 
+  }
+  
+  .footer-item {
+    max-width: 300px; 
+    text-align: left; 
+  }
+  
+  .footer-item h4 {
+    font-size: 18px; 
+    margin-bottom: 10px; 
+  }
+  
+  .footer-item p {
+    margin-bottom: 8px; 
+  }
+  
+  .footer-item a {
+    color: white; 
+    text-decoration: none; 
+  }
+  
+  .footer-item a:hover {
+    text-decoration: underline; 
 }
 
 .text-align-center {

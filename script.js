@@ -30,7 +30,7 @@ function calculateCost() {
     var area = length * width;
     var cost = calculateMaterialCost(area, material);
 
-    document.getElementById('result').innerHTML = 'Kostnad: ' + cost + ' kr';
+    document.getElementById('result').innerHTML = ' ' + 'Kostnad: ' + cost + ' kr';
     }
 }
 
@@ -47,7 +47,7 @@ function calculateCostL() {
     var areaL = lengthA * widthA + lengthB * widthB;
     var costL = calculateMaterialCost(areaL, materialL);
 
-    document.getElementById('resultL').innerHTML = 'Kostnad: ' + costL + ' kr';
+    document.getElementById('resultL').innerHTML = ' ' + 'Kostnad: ' + costL + ' kr';
     }
 }
 
