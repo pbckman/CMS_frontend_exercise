@@ -37,7 +37,8 @@
 <div class="main-patio">
 <div class="patioCalculator-header">
     <h1 class="font">TrallRäknaren</h1>
-    <p class="font">Välj vilken form på altanen du vill ha</p>
+    <div class="underline-div"></div>
+    <p class="font">Vilken form på altanen vill du ha?</p>
 </div>
   <div class="shape-chooser">
     <div class="shape-option">
@@ -49,30 +50,34 @@
         onclick="selectShape('trall2');">
     </div>
 </div>
-
+<div class="underline-div"></div>
 <div class="material-chooser">
+    
     <div class="material-header">
-    <div class="material-headline"><h3>Trallgolv</h3></div>
-    <div class="material-p"><p>Vilket material vill du ha?</p></div>
+
+    <div class="font"><p>Vilket material vill du ha?</p></div>
     </div>
     <div class="material-images">
-      <div id="materialImagesRectangular"><img class="img-material-option" src="Bilder\tra1.jpg" alt="Tryckimpregnerad trall" onclick="selectMaterial('trä1')">    </div>
-      <div id="materialImagesRectangular"><img class="img-material-option" src="Bilder\tra2.jpg" alt="Trall brun VB NTR" onclick="selectMaterial('trä2')"></div>
-      <div id="materialImagesRectangular"><img class="img-material-option" src="Bilder\tra3.jpg" alt="Bangkirai trall 21x145mm" onclick="selectMaterial('trä3')"></div>
-      <div id="materialImagesRectangular"><img class="img-material-option" src="Bilder\tra4.jpg" alt="Bangkirai trall 45x145mm" onclick="selectMaterial('trä4')"></div>
+      <div class="material-image" id="materialImagesRectangular"><img class="img-material-option" src="Bilder\tra1.jpg" alt="Tryckimpregnerad trall" onclick="selectMaterial('trä1')">    </div>
+      <div class="material-image" id="materialImagesRectangular"><img class="img-material-option" src="Bilder\tra2.jpg" alt="Trall brun VB NTR" onclick="selectMaterial('trä2')"></div>
+      <div class="material-image" id="materialImagesRectangular"><img class="img-material-option" src="Bilder\tra3.jpg" alt="Bangkirai trall 21x145mm" onclick="selectMaterial('trä3')"></div>
+      <div class="material-image" id="materialImagesRectangular"><img class="img-material-option" src="Bilder\tra4.jpg" alt="Bangkirai trall 45x145mm" onclick="selectMaterial('trä4')"></div>
     </div>
 
     <input type="hidden" id="selectedMaterial" value="trä1">
 </div>
-
+<div class="underline-div"></div>
 <div class="input-main">
     <div class="input-rekt" id="rektInputs">
+        <div class="input-row">
       <label for="length">A:</label>
       <input type="number" id="length" placeholder="Ange längd (m)">
+    </div>
 
+    <div class="input-row">
       <label for="width">B:</label>
       <input type="number" id="width" placeholder="Ange bredd (m)">
-      
+    </div>
     </div>
 </div>
     <div class="calc-result">
@@ -84,17 +89,22 @@
 
   <div class="input-L">
     <div id="LInputs" style="display: none;">
+    <div class="input-row">
     <label for="lengthA">A:</label>
     <input type="number" id="lengthA" placeholder="Ange längd (m)">
-
+</div>
+<div class="input-row">
     <label for="widthA">B:</label>
     <input type="number" id="widthA" placeholder="Ange bredd (m)">
-
+</div>
+<div class="input-row">
     <label for="lengthB">C:</label>
     <input type="number" id="lengthB" placeholder="Ange längd (m)">
-
+</div>
+<div class="input-row">
     <label for="widthB">D:</label>
     <input type="number" id="widthB" placeholder="Ange bredd (m)">
+</div>
     </div>
 </div>
     <div class="calc-result">

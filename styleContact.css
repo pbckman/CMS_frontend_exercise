@@ -311,10 +311,111 @@ padding-top: 50px;
     clear: both;
   }
   
-  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 600px) {
-    .column, input[type=submit] {
-      width: 100%;
-      margin-top: 0;
+  @media screen and (max-width: 768px) {
+    .container {
+      width: 90%;
     }
+
+    .main-nav-bar {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      background: rgba(255, 255, 255, 0.3);
+      padding: 20px 10px;
+      width: 100%;
+      top: 0;
+  }
+  
+    .nav-item {
+      margin-right: 10px;
+    }
+  
+    .logo {
+      margin-right: auto;
+    }
+  
+    .btn-flex-main-a,
+    .btn-flex-main-b {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  
+    .service-section {
+      flex-direction: column;
+    }
+
+
+    .service-column {
+      width: 100%;
+      margin-bottom: 20px; /* Lägg till lite marginal mellan kolumner */
+    }
+  
+    /* Justera antalet kolumner för .middle-column */
+    .middle-columns, .bottom-columns {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding-bottom: 20px;
+      margin: 0px;
+      
+    }
+
+    .middle-column, .bottom-column {
+      flex: 1 1 calc(50% - 10px);
+       /* Två kolumner per rad med lite marginal */
+    }
+
+    p {
+      font-size: 12px;
+    }
+
+    h3 {
+      font-size: 13px;
+      text-align: center;
+    }
+
+    .special-p-1-middle {
+      font-size: 14px;
+      margin: 10px;
+      padding-left: 30px;
+      padding-right: 30px;
+  }
+
+  .body-middle-container {
+    width: 100%;
+    max-width: 350px;
+    margin: 20px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.header-main {
+  font-size: 25px;
+}
+
+.column-contact-us {
+  display: none;
+}
+
+.row-contact-us {
+  display: flex;
+  align-items: center;
+  justify-content:flex-start;
+  padding-left: 40px;
+  width: 670px;
+  
+}
+
+.main-container-contact-us {
+  padding-top: 160px;
+  padding-bottom: 50px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
   }

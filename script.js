@@ -25,12 +25,12 @@ function calculateCost() {
     if (document.getElementById('rektInputs').style.display === 'block') {
     var length = document.getElementById('length').value;
     var width = document.getElementById('width').value;
-    
-
     var area = length * width;
     var cost = calculateMaterialCost(area, material);
 
     document.getElementById('result').innerHTML = ' ' + 'Kostnad: ' + cost + ' kr';
+    document.getElementById('result').style.display = 'block';
+    document.getElementById('resultL').style.display = 'none';
     }
 }
 
@@ -48,6 +48,8 @@ function calculateCostL() {
     var costL = calculateMaterialCost(areaL, materialL);
 
     document.getElementById('resultL').innerHTML = ' ' + 'Kostnad: ' + costL + ' kr';
+    document.getElementById('resultL').style.display = 'block';
+    document.getElementById('result').style.display = 'none';
     }
 }
 
@@ -72,13 +74,16 @@ function selectShape(shape) {
     }
 
     document.addEventListener('click', function (event) {
-        if (event.target.nodeName == "IMG") {
+        if (event.target.nodeName === "IMG" && (event.target.id === "img-trall1" || event.target.id === "img-trall2")) {
             var allImages = document.querySelectorAll('img');
             allImages.forEach(function (img) {
                 img.style.border = "none";
             });
-    
+
             event.target.style.border = "2px solid yellow";
+
+            document.getElementById('result').style.display = 'none';
+            document.getElementById('resultL').style.display = 'none';
         }
     });
 }
@@ -86,15 +91,17 @@ function selectShape(shape) {
 
 function selectMaterial(material) {
     document.getElementById('selectedMaterial').value = material;
-    
+
     document.addEventListener('click', function (event) {
-        if (event.target.nodeName == "IMG") {
-            var allImages = document.querySelectorAll('img');
+        if (event.target.nodeName === "IMG" && event.target.parentElement.id === "materialImagesRectangular") {
+            var allImages = document.querySelectorAll('#materialImagesRectangular img');
             allImages.forEach(function (img) {
                 img.style.border = "none";
             });
-    
+
             event.target.style.border = "2px solid yellow";
+            document.getElementById('result').style.display = 'none';
+            document.getElementById('resultL').style.display = 'none';
         }
     });
 }
